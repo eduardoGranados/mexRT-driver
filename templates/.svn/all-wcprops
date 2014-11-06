@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gmwt/!svn/ver/259/CabApp/Release-Driver/MexRT-Driver/www/templates
+END
+change-password.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/change-password.html
+END
+editpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gmwt/!svn/ver/137/CabApp/Release-Driver/MexRT-Driver/www/templates/editpl.html
+END
+edit-profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/edit-profile.html
+END
+sign-in.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gmwt/!svn/ver/260/CabApp/Release-Driver/MexRT-Driver/www/templates/sign-in.html
+END
+request-accepted.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gmwt/!svn/ver/259/CabApp/Release-Driver/MexRT-Driver/www/templates/request-accepted.html
+END
+recover-password.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/recover-password.html
+END
+settings.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gmwt/!svn/ver/137/CabApp/Release-Driver/MexRT-Driver/www/templates/settings.html
+END
+newItem.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gmwt/!svn/ver/137/CabApp/Release-Driver/MexRT-Driver/www/templates/newItem.html
+END
+menu.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gmwt/!svn/ver/137/CabApp/Release-Driver/MexRT-Driver/www/templates/menu.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gmwt/!svn/ver/259/CabApp/Release-Driver/MexRT-Driver/www/templates/home.html
+END
+confirm-popup.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/confirm-popup.html
+END
+create-account.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/create-account.html
+END
+delete-account.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/gmwt/!svn/ver/248/CabApp/Release-Driver/MexRT-Driver/www/templates/delete-account.html
+END

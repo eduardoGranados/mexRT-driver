@@ -1,0 +1,23 @@
+<ion-view title="Request Accepted">
+
+    <div class="bar bar-subheader bar-dark" id="subtitle">
+        <h2 class="title">Request Accepted</h2>
+    </div>
+
+    <ion-content class="padding has-subheader">
+
+        <div class="item item-divider">Address</div>
+        <div class="item item-text-wrap" >{{clientAddres}}</div>
+        <div class="item item-divider">Reference point</div>
+        <div class="item item-text-wrap" >{{clientRef}}</div>
+
+        <a class="button button-block button-outline button-positive" id="atertClientBtn"><!--href="#/home"-->
+            Alert Client
+        </a>
+
+        <a class="button button-block button-balanced" ng-click="finishRide()"  ><!--href="#/home"-->
+            Ride Finished
+        </a>
+
+    </ion-content>
+</ion-view>

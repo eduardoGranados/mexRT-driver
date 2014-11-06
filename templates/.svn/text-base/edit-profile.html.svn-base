@@ -1,0 +1,249 @@
+<ion-view title="Edit Profile">
+
+<div class="bar bar-subheader bar-dark" id="subtitle">
+  <h2 class="title">Edit Profile</h2>
+</div>
+
+<ion-content class="padding has-subheader">
+    <div class="list card">
+        <div class="item item-avatar">
+            <img src="img/taxi_driver.png">
+            <label class="item item-input">
+                <span class="input-label">Name:</span>
+                {{getUName()}}
+            </label>
+        </div>
+
+        <div class="item item-body">
+            <form name="edit_form">
+                <div class="list list-inset">
+                    <div class="item item-divider bar bar-dark" id="subtitle">
+                        Taxi Driver Information
+                    </div>
+                    <!-- ********************************************************** -->
+                    <!-- First Name -->
+                    <!-- ********************************************************** --> 
+                    <div class="item item-divider">
+                        First Name
+                    </div>               
+                    <label class="item item-input">
+                        <input 
+                            name="first_name" 
+                            type="text" 
+                            ng-model="driver.first_name" 
+                            placeholder="{{getUFName()}}" 
+                            ng-minlength=2 ng-maxlength=20 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.first_name.$dirty && edit_form.first_name.$invalid">
+                        <small class="error" ng-show="edit_form.first_name.$error.minlength" style="color: red;">
+                            Must have more than 2 characters.
+                        </small>
+
+                        <small class="error" ng-show="edit_form.first_name.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Last Name -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Last Name
+                    </div> 
+                    <label class="item item-input">
+                        <input 
+                            name="last_name" 
+                            type="text" 
+                            ng-model="driver.last_name"  
+                            placeholder="{{getULName()}}"
+                            ng-maxlength=20
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.last_name.$dirty && edit_form.last_name.$invalid">
+                        <small class="error" ng-show="edit_form.last_name.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Email -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Email
+                    </div> 
+                    <label class="item item-input">
+                        <input 
+                        name="d_email"
+                        type="email"
+                        ng-model="driver.email" 
+                        placeholder="{{getToken()}}"
+                        ng-minlength=6 
+                        ng-maxlength=40 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.d_email.$dirty && edit_form.d_email.$invalid">
+                        <small class="error" ng-show="edit_form.d_email.$error.minlength" style="color: red;">
+                            Must have more than 6 characters.
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.d_email.$error.email" style="color: red;">
+                            Invalid email.
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.d_email.$error.maxlength" style="color: red;">
+                            Must have less than 40 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Phone -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Phone
+                    </div> 
+                    <label class="item item-input">
+                        <input
+                        name="phone" 
+                        type="tel" 
+                        ng-model="driver.phone" 
+                        placeholder="{{getUphone()}}"
+                        ng-minlength=6
+                        ng-maxlength=20 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.phone.$dirty && edit_form.phone.$invalid">
+                        <small class="error" ng-show="edit_form.phone.$error.tel" style="color: red;">
+                            Invalid phone.
+                        </small>
+
+                        <small class="error" ng-show="edit_form.phone.$error.minlength" style="color: red;">
+                            Must have more than 6 characters..
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.phone.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <div class="item item-divider bar bar-dark" id="subtitle">
+                        Car Information
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Modelo -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Model
+                    </div>
+                    <label class="item item-input">
+                        <input 
+                            name="model" 
+                            type="text" 
+                            ng-model="driver.cabmodel" 
+                            placeholder="{{getCmodel()}}" 
+                            ng-maxlength=20 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.model.$dirty && edit_form.model.$invalid">
+                        <small class="error" ng-show="edit_form.model.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Maker -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Manufacturer
+                    </div>
+                    <label class="item item-input">
+                        <input 
+                            name="maker" 
+                            type="text" 
+                            ng-model="driver.cabmaker" 
+                            placeholder="{{getCmaker()}}" 
+                            ng-maxlength=20 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.maker.$dirty && edit_form.maker.$invalid">
+                        <small class="error" ng-show="edit_form.maker.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Year -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Year
+                    </div>
+                    <label class="item item-input">
+                        <input 
+                            name="year" 
+                            type="number" 
+                            ng-model="driver.cabyear" 
+                            placeholder="{{getCyear()}}" 
+                            min="1900" max="9999"
+                        >
+                    </label>
+
+
+                    <!-- ********************************************************** -->
+                    <!-- Board -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Manufacturer
+                    </div>
+                    <label class="item item-input">
+                        <input 
+                            name="board" 
+                            type="text" 
+                            ng-model="driver.cabboard" 
+                            placeholder="License Plate: {{getCboard()}}" 
+                            ng-maxlength=12 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.board.$dirty && edit_form.board.$invalid">
+                        <small class="error" ng-show="edit_form.board.$error.maxlength" style="color: red;">
+                            Must have less than 12 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Taxi Number -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Taxi Number
+                    </div>
+                    <label class="item item-input">
+                        <input 
+                            name="number" 
+                            type="number" 
+                            ng-model="driver.cabnumber" 
+                            placeholder="{{getCnum()}}" 
+                            min="1" max="9999" 
+                        >
+                    </label>
+        
+                    <div class="button-bar">
+                        <button class="button button-block button-calm" ng-click="Editdriver()" type="submit">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="button-bar">
+                <button class="button icon-left ion-locked button-energized" style="width: 100%;" ng-click="goState('change-password')">
+                    Change Password
+                </button>
+
+                <button class="button icon-left ion-close-circled button-assertive" style="width: 100%;" ng-click="goState('delete-perfil')">
+                    Delete Profile
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</ion-content>
+</ion-view>

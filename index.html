@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat;" >
+  <head>
+    
+    <meta charset='utf-8'>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>MexRT - Driver</title>
+    
+    <!-- CSS -->
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ionic-rating.css" rel="stylesheet">
+    
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+
+    <!--google maps for angular-->
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB9-M1esX7KOwvO78N0RTpCIPsrqNTXP1E&libraries=places&sensor=true">
+    </script>
+    <script src='js/lodash.underscore.js'></script>
+    <script src='js/angular-google-maps.js'></script>
+
+    <script src='lib/jquery.js'></script>
+    <!--<script type="text/javascript" charset="utf-8" src="lib/socket.io.js"></script>-->
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/md5.js"></script>
+  
+  </head>
+  
+  <body ng-app="starter" animation="slide-left-right">
+    
+    <ion-header-bar align-title="left" class="bar-dark" animation="fade-in">
+        <!-- <div class="buttons right-buttons">
+            <img src="img/icon.png" style="height:auto; width:auto; max-width:32px; max-height:32px;">
+        </div>-->
+    
+        <h1 class="title">
+            <img src="img/icon.png" style="height:auto; width:auto; max-width:68px; max-height:68px;">
+        </h1>
+    
+        <h2 class="title" style="text-align: left; padding-left:70px ">MexRT - Driver</h2>
+    
+        <div class="buttons" id="btn_header">
+            <a class="button button-icon icon ion-checkmark-circled" id="d_active"   href="#/home" style="display:none"></a>
+            <a class="button button-icon icon ion-minus-circled"     id="d_inactive" href="#/home" style="display:none"></a> 
+            <a class="button button-icon ion-edit" href="#/settings" id="d_edit" style="display:none"></a>
+            <a class="button button-icon icon ion-log-out" ng-click="logout()" id="d_logout" style="display:none"></a>
+            <a class="button button-clear ion-chevron-left button-light" href="#/sign-in" style="font-size: 37px;" id="d_back"></a> 
+        </div>
+    </ion-header-bar>
+    <ion-nav-view></ion-nav-view>
+
+    <ion-footer-bar class="bar-dark" id="btn_footer" style="display:none">
+    <div class="button-bar">
+        <a class="button icon-left ion-checkmark-circled button-balanced" id="btn_active_y">
+            Available
+        </a>
+        
+        <a class="button icon-left ion-checkmark-circled button-outline button-balanced" id="btn_active_n" 
+           ng-click="ActiveDriver()" style="display:none">
+            Available
+        </a>
+            
+        <a class="button icon-left ion-minus-circled button-assertive" style="display:none" id="btn_inactive_y">
+            Busy
+        </a>
+        
+        <a class="button icon-left ion-minus-circled button-outline button-assertive" ng-click="DesactiveDriver()" id="btn_inactive_n">
+            Busy
+        </a>
+    </div> 
+    </ion-footer-bar>
+  
+  </body>
+</html>

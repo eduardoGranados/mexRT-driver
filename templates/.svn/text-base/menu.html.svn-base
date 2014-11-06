@@ -1,0 +1,5 @@
+<ion-view title="Menu">
+    <ion-content class="padding">
+        <h1>Menu</h1>
+    </ion-content>
+</ion-view>

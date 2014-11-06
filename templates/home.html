@@ -1,0 +1,46 @@
+<ion-view title="Settings">
+<div class="bar bar-subheader bar-dark" id="subtitle">
+  <h2 class="title">Home</h2>
+</div>
+
+<ion-content class="padding has-subheader">
+
+    	<div class="list card">
+            <div class="item item-avatar">
+                <img src="img/taxi_driver.png">
+                <label class="item item-input">
+                    <span class="input-label">Name:</span>
+                    {{getUName()}}
+                </label>
+            </div>
+
+            <div class="item item-body">
+                <label class="item item-input">
+                    <span class="input-label">Phone:</span>
+                    {{getUphone()}}
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Email:</span>
+                    {{getToken()}}
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Car:</span>
+                    {{getCmaker()}} {{getCmodel()}} - {{getCyear()}}
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Plate No:</span>
+                    {{getCboard()}}
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Taxi No:</span>
+                    {{getCnum()}}
+                </label>
+            </div>
+        </div>
+
+        <!--<button class="button button-primary" ng-click="showConfirm()">-->
+            <!--Prueba Alerta-->
+        <!--</button>-->
+
+    </ion-content>
+</ion-view>

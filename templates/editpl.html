@@ -1,0 +1,16 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Edit Playlist</h1>
+        <button class="button button-clear button-primary" ng-click="modal_edit.hide()">Cancel</button>
+    </ion-header-bar>
+        
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">{{titlepl.title}} to:</span>
+                <input ng-model="newPL.Name" type="text" placeholder="New Title">  
+            </label>
+            <button class="button button-full button-positive" ng-click="editPlaylist(newPL.Name, titlepl.title, titlepl.id)">Edit</button>
+        </div>
+    </ion-content>
+</ion-modal-view>

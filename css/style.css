@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+.angular-google-map-container { height: 400px; }
+
+.input-label{
+    font-size:14px !important;
+}
+
+.bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
+    font-size: 26px !important;
+}
+
+.status-cab-btn{
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    bottom: 0;
+}
+
+#d_active{
+    color: #7cfc00;
+}
+#d_inactive{
+    color: #ff0000;
+}
+
+#subtitle
+{
+    background-color: rgba(68, 68, 68, 0.68);
+}
